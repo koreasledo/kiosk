@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- 메타 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="황채아 서성경 정아영의 팀프로젝트 ">
+    <meta name="description" content="황채아 서성경 정아영의 맘스터치 키오스크 만들기">
+    <meta name="keywords" content="맘스터치, 키오스크, 맘스터치키오스크만들기, 웹 표준, 웹 접근성,반응형, json, Frontend,Backend,Fullstack,Junior Developer markup, design">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./public/ico/favicon.ico">
+    
+    <!-- xeicon, font -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <!-- html5이전 일때 예외 처리 -->
+
+<!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script type="text/javascript">
+    alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+    </script>
+<![endif]-->
+
+
+
+    <title>Mom's Touch Kiosk</title>
+</head>
+
+<body>
+    <section id="mainWrap" class="">
+        <h1>키오스크</h1>
+
+        <section id="App" class="">
+            <div class="container">
+
+
+                <!-- ^^키오스크 IMG -->
+                <article id="kiostImg">
+                    <img src="./public/img/back.png" alt="키오스크">
+
+                    <div id="Receipt">
+
+                        <ul class="ReceiptTop">
+                            <li>맘스터치 [<span id="ReceiptTakeEating">포장</span>]</li>
+                            <li>------------------</li>
+                            <li>대기번호</li>
+                            <li id="RspcpCardRanCont">000</li>
+                            <li>------------------</li>
+                            <li>ITEM QTY AMT</li>
+                        </ul>
+
+                        <ul id="Receiptcont1"> </ul>
+                        <ul class="ReceiptBottom">
+                            <li>------------------</li>
+                            <li>합계금액 : <span class="RspcpchongPrice"></span></li>
+                            <li>받은금액 : <span class="RspcpchongPrice"></span></li>
+                            <li>------------------</li>
+                            <li>감사합니다</li>
+                        </ul>
+
+                    </div>
+                </article>
+                <!-- //키오스크 IMG -->
+
+                <!-- ^^loding IMG -->
+                <article id="mainLoding">
+                    <img src="./public/img/mamstouch_logo 1.png" alt="로딩로고">
+                </article>
+                <!-- ^^loding IMG -->
+
+                <!-- ^^메인컨텐츠-->
+                <section id="AppContent">
+
+                    <!-- 스위치1 -->
+                    <div id="firstpage">
+                        <article id="mainKiostImg">
+                            <img src="./public/img/sidgif.gif" alt="이벤트">
+                        </article>
+
+                        <article id="mainKiostText">
+                            <h2>카드전용 주문기기 입니다</h2>
+                            <p>현금 및 기타 결제는 <span>카운터</span> 에서 진행해주세요</p>
+
+                            <div class="oder_btns">
+                                <button class="main_oderbtn">주문하기</button>
+                    </div>
+                        </article>
+                    </div>
+
+                    <!-- ^^주문페이지secondPage -->
+
+                    <div id="secondPage">
+                        <header>
+                            <!-- ^^네비영역-->
+                            <div class="headLine">
+                                <img class="headLogo" src="./public/img/mamstouch.png" alt="mainLogo">
+                                <nav id="headNav">
+                                    <a></a>
+                                    <a></a>
+                                    <a id="ex">첫화면</a>
+                                </nav>
+                            </div>
+                            <!-- Nav 메뉴 -->
+                            <div class="headMenuNavBox">
+                                <nav class="headMenuNav">
+                                    <a data-id="0" data-name="new" class="backwhite">NEW</a>
+                                    <a data-id="1" data-name="ham">버거</a>
+                                    <a data-id="2" data-name="chi">치킨</a>
+                                    <a data-id="3" data-name="set">사이드</a>
+                                    <a data-id="4" data-name="dri">음료</a>
+                                </nav>
+                            </div>
+                        </header>
+                        <!-- //네비영역-->
+
+                        <!-- main 시작 -->
+                        <main id="mainSection">
+                            <!-- ^^메뉴판 -->
+                            <section id="MenuFoodWrap">
+                                <div class="Menu_silder">
+                                    <!-- Json메뉴 불러옴  -->
+                                </div>
+                            </section>
+
+                            <!-- ^^버튼 -->
+                            <section id="MenuControl">
+                                <button id="menuBtnL" class="mcbtn">이전</button>
+                                <button id="menuBtnR" class="mcbtn">다음</button>
+                            </section>
+                            <!-- //버튼 -->
+
+                        </main>
+                        <!-- //main -->
+
+                        <!-- ^^결제 페이지 -->
+                        <section id="orderCalculate">
+                            <div id="orderWrap">
+
+                                <!-- ^^제목 -->
+                                <section id="oderTitle">
+                                    <ul>
+                                        <li>제품명</li>
+                                        <li>수량</li>
+                                        <li>금액</li>
+                                        <li></li>
+                                        <li>주문수량</li>
+                                    </ul>
+                                </section>
+
+                                <!-- ^^내용 -->
+                                <section id="oderContents">
+                                    <article id="odercont1"> </article>
+                                    <article id="odercont2">
+                                        <ul>
+                                            <li><input id="chongNum" type="text" placeholder="0" readonly></li>
+                                            <li>주문금액</li>
+                                            <li><input id="chongPrice" type="text" placeholder="0" readonly></li>
+                                            <li id="listCancelAll">전체취소</li>
+                                            <li id="listOkey">주문하기</li>
+                                        </ul>
+                                    </article>
+                                </section>
+                            </div>
+                        </section>
+                        <!-- //결제 페이지 -->
+
+                        <!-- ^^ 설명 팝업 -->
+                        <section id="SPselectionPopup">
+                            <div id="selecPopWrap">
+
+                                <article id="selectPopTitle">
+                                    <div class="sp_close"><button>x</button></div>
+                                    <h2 id="selectPopName"></h2>
+                                </article>
+
+                                <article id="selectPopContents">
+                                    <div class="sp_cont1">
+                                        <div class="spImgWrap">
+                                            <img src="#" alt="">
+                                        </div>
+                                        <div class="spTextWrap">
+                                            <div class="spTDes">
+                                                <p>조리시간 : 7 ~ 10 분</p>
+                                                <p class="sptdDesc">바삭하고 매콤한 치킨 패티와 신선한 양상추가
+                                                    조화를 이루는 맘스터치 시그니처 버거 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sp_cont2">
+                                        <button id="sp_cont2Open">구매하기</button>
+                                        <button id="sp_cont2OpenSide">구매하기</button>
+                                        <!-- <button>세트</button> -->
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <!-- // 설명 팝업 -->
+
+                        <!-- ^^Choose -->
+                        <section id="SPChoosePopup">
+                            <form id="ChoosePopWrap">
+                                <article id="ChoosePopTitle">
+                                    <h2> 상품선택 </h2>
+                                </article>
+
+                                <article id="choosePopdesc">
+
+                                    <div class="spImgWrap">
+                                        <img src="#" alt="">
+                                    </div>
+
+                                    <div class="spTextWrap">
+
+                                        <div class="spTiname">
+                                            <h3>싸이버거</h3>
+                                            <p class="spipric">5900</p>
+                                        </div>
+
+                                        <div class="spTCount">
+                                            <i id="spTCountDown" class="xi-caret-down"></i>
+                                            <input type="number" name="selnum" min=0 value="1">
+                                            <i id="spTCountUP" class="xi-caret-up"></i>
+                                        </div>
+
+                                        <div class="spTDes">
+                                            <p>조리시간 : 7 ~ 10 분</p>
+                                            <p class="sptdDesc">바삭하고 매콤한 치킨 패티와 신선한 양상추가
+                                                조화를 이루는 맘스터치 시그니처 버거 </p>
+                                        </div>
+                                </article>
+
+                                <article id="choosePopbody">
+                                    <div class="choosePopbodyitem">
+                                        <p class="choosePopbodyitemtitle">세트업 [음료와 사이드를 추가 제공합니다.]</p>
+                                        <div class="choosePopbodyitemRow">
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="bur" data-choose="단품" id="onlybur"
+                                                    class="input-hidden" value="0" checked />
+                                                <label for="onlybur" class="spImgWrap">
+                                                    <img src="#" />
+                                                </label>
+                                                <strong>단품</strong>
+                                                <p> + 0</p>
+                                            </div>
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="bur" data-choose="세트" id="setbur"
+                                                    class="input-hidden" value="1500" />
+                                                <label for="setbur">
+                                                    <img src="./public/img/setup.png" />
+                                                </label>
+                                                <strong>세트</strong>
+                                                <p> + 1500</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="choosePopbodyitem">
+                                        <p class="choosePopbodyitemtitle">음료 추가 [세트를 선택하신 고객님 또한 추가로 선택가능합니다.]</p>
+                                        <div class="choosePopbodyitemRow">
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="dri" data-choose="음료선택안함" id="drino"
+                                                    class="input-hidden" value="0" checked />
+                                                <label for="drino">
+                                                    <img src="./public/img/seletno.png" />
+                                                </label>
+                                                <strong>선택안함</strong>
+                                                <p> + 0</p>
+                                            </div>
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="dri" data-choose="콜라" id="dri1"
+                                                    class="input-hidden" value="1000" />
+                                                <label for="dri1">
+                                                    <img src="./public/img/dir2.png"/>
+                                                </label>
+                                                <strong>콜라</strong>
+                                                <p> + 1000</p>
+                                            </div>
+
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="dri" data-choose="사이다" id="dri2"
+                                                    class="input-hidden" value="1000" />
+                                                <label for="dri2">
+                                                    <img src="./public/img/dir1.png"/>
+                                                </label>
+                                                <strong>사이다</strong>
+                                                <p> + 1000</p>
+                                            </div>
+
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="dri" data-choose="레몬에이드" id="dri3"
+                                                    class="input-hidden" value="1000" />
+                                                <label for="dri3">
+                                                    <img src="./public/img/dir5.png"/>
+                                                </label>
+                                                <strong>레몬에이드</strong>
+                                                <p> + 1000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="choosePopbodyitem">
+                                        <p class="choosePopbodyitemtitle">사이드 추가 [세트를 선택하신 고객님 또한 추가로 선택가능합니다.]</p>
+
+                                        <div class="choosePopbodyitemRow">
+
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="side" data-choose="사이드선택안함" id="sideno"
+                                                    class="input-hidden" value="0" checked />
+                                                <label for="sideno">
+                                                    <img src="./public/img/seletno.png" />
+                                                </label>
+                                                <strong>선택안함</strong>
+                                                <p> + 0</p>
+                                            </div>
+
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="side" data-choose="감자" id="sideno1"
+                                                    class="input-hidden" value="1000" />
+                                                <label for="sideno1">
+                                                    <img src="./public/img/potato.png" />
+                                                </label>
+                                                <strong>감자</strong>
+                                                <p> + 1000</p>
+                                            </div>
+
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="side" data-choose="코울슬로" id="sideno2"
+                                                    class="input-hidden" value="1000" />
+                                                <label for="sideno2">
+                                                    <img src="./public/img/sid2.png" />
+                                                </label>
+                                                <strong>코울슬로</strong>
+                                                <p> + 1000</p>
+                                            </div>
+
+                                            <div class="choosePopbody_item">
+                                                <input type="radio" name="side" data-choose="콘샐러드" id="sideno3"
+                                                    class="input-hidden" value="1000" />
+                                                <label for="sideno3">
+                                                    <img src="./public/img/sid3.png" />
+                                                </label>
+                                                <strong>콘샐러드</strong>
+                                                <p> + 1000</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </article>
+
+                                <article id="choosePopbtn">
+                                    <button id="choosePopbtnclose">취소</button>
+                                    <button id="choosePopbtnSub">확인</button>
+                                </article>
+
+                            </form>
+                        </section>
+                        <!-- //Choose -->
+
+
+                        <!-- ^^계산팝업 OkeyPopup -->
+                        <section id="SPOkeyPopup">
+                            <div id="OkeyPopWrap">
+
+                                <!-- OkeyPopTitle 팝업창 제목 -->
+                                <article id="OkeyPopTitle">
+                                    <h2> 결제 선택 </h2>
+                                </article>
+
+                                <!-- OkeyPopSubTitle 팝업창 부제목 -->
+                                <article id="OkeyPopSubTitle">
+                                    <h3>결제수단을 선택해주세요</h3>
+                                </article>
+
+                                <!-- OkeyPopTitleMemuList 팝업창 상품 리스트 -->
+                                <article id="OkeyPopTitleMemuList">
+
+                                    <section class="optml_item_Subtitle">
+                                        <ul>
+                                            <li>메뉴</li>
+                                            <li>수량</li>
+                                            <li>금액</li>
+                                        </ul>
+                                    </section>
+
+                                    <section class="optml_item_lists">
+                                        <div id="OKodercont1">
+
+                                            <!-- <div class="oderItem">
+                                                <ul>
+                                                    <li>텍사스바베큐치킨버거</li>
+                                                    <li><input type="number" value="123">
+
+                                                    <li><span class="oderItemdon">100,000<span><span>원</span></li>
+                                                    <li>➖</li>
+                                                </ul>
+
+                                                <p>
+                                                    <span><i class="xi-subdirectory-arrow"></i> [</span>
+                                                    <strong>이것저것</strong>
+                                                    <span> ] </span>
+                                                </p>
+                                            </div> -->
+
+                                        </div>
+                                    </section>
+                                </article>
+
+                                <!-- OkeyPopPay 팝업창 금액창 -->
+                                <article id="OkeyPopPay">
+                                    <div class="optml_sum_wrap">
+                                        <ul>
+                                            <li>주문수량 : <span id="OKchongNum">0</span> </li>
+                                            <li>주문금액 : <span id="OKchongPrice">10,100</span> </li>
+                                        </ul>
+                                    </div>
+
+                                </article>
+
+                                <!-- OkeyPopTake 팝업창 포장 버튼 -->
+                                <article id="OkeyPopTake">
+
+                                    <label class="Take_box">
+                                        <input type="radio" name="takeeating" value="포장" checked>
+                                        <span>포장</span>
+                                    </label>
+
+                                    <label class="Take_box">
+                                        <input type="radio" name="takeeating" value="매장">
+                                        <span>매장</span>
+                                    </label>
+
+                                </article>
+
+                                <!-- OkeyPopPayment 결제 버튼 -->
+                                <article id="OkeyPopPayment">
+
+                                    <div id="Okcancel"><a><i class="xi-close"></i> 취소</a></div>
+                                    <div>
+                                        <p> 현재 대기시간<br>약 <span>15</span> 분</p>
+                                    </div>
+                                    <div id="Okcard"><a><i class="xi-credit-card"></i> 신용카드</a></div>
+
+                                </article>
+
+                            </div>
+                        </section>
+                        <!-- //계산팝업 OkeyPopup -->
+
+
+                        <!-- ^^카드결제 팝업 -->
+                        <section id="spCardPopup">
+                            <div id="CardPopupWrap">
+                                <div class="cardContents">
+
+                                    <h2>카드를 리더기에 넣어주세요</h2>
+                                    <div>
+                                        <img src="./public/img/cardPop.gif" alt="card">
+                                    </div>
+                                    <p>
+                                        카드 이용해 결제해주세요<br>
+                                        현금 결제는 카운터를 이용해주세요
+                                    </p>
+
+                                    <a id="spcpCardOk">확인</a>
+
+                                    <div class="card_loding_container">
+                                        <div class="Loading">
+                                            <span data-charge='100'></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- <article>
+                                        <ul>
+                                            <li>결제가 완료되었습니다.</li>
+                                            <li>대기번호</li>
+                                            <li id="spcpCardRanCont">000</li>
+                                            <li>영수증을 꼭 가져가세요</li>
+                                            <li>
+                                                <img src="./public/img/receipt_icon.svg" alt="card">
+                                            </li>
+                                            <li>제품 수령시 영수증의 대기번호가 필요합니다<br>
+                                                꼭 소지 부탁드립니다.
+                                            </li>
+                                            <li><span id="TimeToFive">5</span>초뒤에 처음으로 돌아갑니다</li>
+                                        </ul>
+                                    </article> -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //카드결제 팝업 -->
+                    </div>
+                    <!-- //주문페이지secondPage -->
+                </section>
+                <!-- ^^메인컨텐츠-->
+            </div>
+        </section>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./public/js/ui.js"></script>
+
+
+</body>
+
+</html>

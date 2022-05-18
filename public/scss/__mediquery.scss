@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+@media all and (min-width:2000px) { 
+    html,body{font-size: 11px;}
+} 
+@media all and (min-width:1200px)and (max-width:1950px) { 
+    html,body{font-size: 10px;}
+} 
+@media all and (min-width:1023px) and (max-width:1200px) { 
+    html,body{font-size: 8.5px;}
+} 
+@media all and (min-width:768px) and (max-width:1023px) { 
+    html,body{font-size: 7px;}
+} 
+@media all and (min-width:510px) and (max-width:767px) { 
+    html,body{font-size: 5px;}
+    #App{transform: translateX(0%);}
+    #AppContent{transform: scale(1);}
+    .scale {transform: scale(1.16) translateY(11%);transition: all 2s ease-out;}
+}
+@media all and (max-width:510px) { 
+    html,body{font-size: 5px;}
+    #App{transform: translateX(0%);}
+    #AppContent{transform: scale(1);}
+    .scale {transform: scale(1.16) translateY(11%);transition: all 2s ease-out;}
+    #App #AppContent #secondPage #mainSection #MenuFoodWrap .Menu_silder .mainMenuFood {
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+}

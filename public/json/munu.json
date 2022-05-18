@@ -1,0 +1,282 @@
+[{
+    "memu": [{
+            "new": [{
+                "img":  "./public/img/ham3.png",
+                "name": "치즈홀릭버거(체다)",
+                "onlyprice": 5400,
+                "desc":"두툼 닭다리&잘 구운 통베이컨"
+            }, {
+                "img":  "./public/img/new2.png",
+                "name": "치즈홀릭버거(에멘탈)",
+                "onlyprice": 5400,
+                "desc":"신선한 치킨 패티속 깊은 풍미의 에멘탈 치즈 깊은 풍미의 에멘탈 치즈"
+            },{
+                "img":  "./public/img/chi1.png",
+                "name": "치즈뿌치싸이순살",
+                "onlyprice": 11900,
+                "desc":"바삭하고 매콤한 치킨 패티와 신선한 양상추가 조화를 이루는 맘스터치 시그니처 버거"
+            },{
+                "img":  "./public/img/sid1.png",
+                "name": "공룡치킨",
+                "onlyprice": 3000,
+                "desc":"치즈와 카레 두가지 맛으로 즐기는 귀여운 공룡 모양치킨"
+            }]
+        }, {
+            "ham": [{
+                "img":  "./public/img/ham1.png",
+                "name": "텍사스바베큐치킨버거",
+                "onlyprice": 5600,
+                "desc":"두툼 닭다리&잘 구운 통베이컨"
+            },{
+                "img":  "./public/img/ham2.png",
+                "name": "치즈홀릭버거(에멘탈)",
+                "onlyprice": 5400,
+                "desc":"신선한 치킨 패티 속 깊은 풍미의 에멘탈 치즈"
+            },{
+                "img":  "./public/img/ham3.png",
+                "name": "치즈홀릭버거(체다)",
+                "onlyprice": 5400,
+                "desc":"신선한 치킨 패티 속 고소한 체다 치즈 가득!"
+            },{
+                "img":  "./public/img/ham4.png",
+                "name": "싸이플렉스버거",
+                "onlyprice": 6900,
+                "desc":"통다리살 싸이패티가 2장 압도적 사이즈의 FLEX"
+            },{
+                "img":  "./public/img/ham5.png",
+                "name": "양념치킨싸이버거",
+                "onlyprice": 4200,
+                "desc":"싸이버거와 국내산 벌꿀 함유 특제 양념치킨 소스의 꿀조합"
+            },{
+                "img":  "./public/img/ham6.png",
+                "name": "간장마늘싸이버거",
+                "onlyprice": 4200,
+                "desc":"싸이버거와 단짠의 정석 특제 간장소스의 조화로운 만남"
+            },{
+                "img":  "./public/img/ham7.png",
+                "name": "새우불고기버거",
+                "onlyprice": 4800,
+                "desc":"새우살이 씹히는 통새우살 패티와 불맛 가득 불고기 패티의 환상적인 버거"
+            },{
+                "img":  "./public/img/ham8.png",
+                "name": "에그불고기버거",
+                "onlyprice": 4800,
+                "desc":"고소한 불고기 소스에 에그프라이를 더한 영양 만점 버거"
+            },{
+                "img":  "./public/img/ham9.png",
+                "name": "싸이버거",
+                "onlyprice": 4100,
+                "desc":"바삭하고 매콤한 치킨 패티와 신선한 양상추가 조화를 이루는 맘스터치 시그니처 버거"
+            },{
+                "img":  "./public/img/ham10.png",
+                "name": "불싸이버거",
+                "onlyprice": 4200,
+                "desc":"싸이버거의 매운맛 버전"
+            },{
+                "img":  "./public/img/ham11.png",
+                "name": "딥치즈버거",
+                "onlyprice": 4300,
+                "desc":"부드러운 치즈와 한층 더 촉촉해진 통가슴살 패티가 일품인 버거"
+            },{
+                "img":  "./public/img/ham12.png",
+                "name": "인크레더블버거",
+                "onlyprice": 5400,
+                "desc":"프리미엄 더블햄, 에그프라이, 로다이살 패티에 아삭아삭한 양상추와 양파까지, 풍성한 버거"
+            },{
+                "img":  "./public/img/ham13.png",
+                "name": "언빌리버블버거",
+                "onlyprice": 5400,
+                "desc":"통새우, 에그프라이, 통가슴살 패티에 매콤한 스리라챠 마요 소스를 더한 대확행 버거"
+            },{
+                "img":  "./public/img/ham14.png",
+                "name": "불고기버거",
+                "onlyprice": 3300,
+                "desc":"영양만점 불고기 패티에 고소한 불고기 소스를 더해 한층 더 맛있는 버거"
+            },{
+                "img":  "./public/img/ham15.png",
+                "name": "통새우버거",
+                "onlyprice": 2900,
+                "desc":"고소하고 탱글한 통새우 패티에 신선한 양상추가 조화로운 버거"
+            },{
+                "img":  "./public/img/ham16.png",
+                "name": "화이트갈릭버거",
+                "onlyprice": 4400,
+                "desc":"부드러운 확이트 갈릭 소스에 프리미엄 더블행과 통가슴살 패티까지 담은 묵직한 버거"
+            }]
+        },
+        {
+            "chi": [{
+                "img":  "./public/img/chi1.png",
+                "name": "치즈뿌치싸이순살",
+                "onlyprice": 11900,
+                "desc":"스페셜 치즈 시즈닝의 단짠 매력이 환상적인 닭다리살 순살치킨"
+            },{
+                "img":  "./public/img/chi2.png",
+                "name": "치파오싸이순살",
+                "onlyprice": 11900,
+                "desc":"매콤달콤 사천식 소스의 닭다리살 순살치킨"
+            },{
+                "img":  "./public/img/chi3.png",
+                "name": "맘스양념싸이순살",
+                "onlyprice": 11900,
+                "desc":"국내산 벌꿀 함유 매콤달콤 특제 양념소스의 닭다리살 순살치킨"
+            },{
+                "img":  "./public/img/chi4.png",
+                "name": "간장마늘싸이순살",
+                "onlyprice": 11900,
+                "desc":"알싸한 마늘향과 특제 간장소스의 닭다리살 순살치킨"
+            },{
+                "img":  "./public/img/chi5.png",
+                "name": "블랙쏘이싸이순살",
+                "onlyprice": 11900,
+                "desc":"은은한 불향 간장소스에 이색 토핑가득 닭다리살 순살치킨"
+            },{
+                "img":  "./public/img/chi6.png",
+                "name": "후라이드싸이순살",
+                "onlyprice": 9900,
+                "desc":"케이준 양념 레시피로 더 바삭하고 스파이시한 닭다리살 순살치킨"
+            },{
+                "img":  "./public/img/chi7.png",
+                "name": "블랙쏘이치킨",
+                "onlyprice": 17000,
+                "desc":"은은한 불향에 이색 토핑 가득 스페셜 간장치킨"
+            },{
+                "img":  "./public/img/chi8.png",
+                "name": "간장마늘치킨",
+                "onlyprice": 17000,
+                "desc":"알싸한 마늘 향의 매콤함, 특제 간장소스의 단짠이 조화로운 치킨"
+            },{
+                "img":  "./public/img/chi9.png",
+                "name": "맘스양념치킨",
+                "onlyprice": 17000,
+                "desc":"국내산 벌꿀이 함유된 매콤달콤 특제 양념소스로 꿀맛나는 엄마표 맘스양념치킨"
+            },{
+                "img":  "./public/img/chi10.png",
+                "name": "후라이드치킨",
+                "onlyprice": 15000,
+                "desc":"싸이버거 스타일 케이준 양념레시피로 더 바삭하고 스파이시한 핫크리스피 치킨"
+            },{
+                "img":  "./public/img/chi11.png",
+                "name": "반반치킨",
+                "onlyprice": 16000,
+                "desc":"2가지 맛을 한 번에! 골라먹는 재미가 있는 반반치킨"
+            },{
+                "img":  "./public/img/chi12.png",
+                "name": "케이준떡강정",
+                "onlyprice": 10000,
+                "desc":"100% 닭다리살과 쫀득한 쌀떡, 매콤달콤한 케이준 소스의 환상적인 조화!"
+            },{
+                "img":  "./public/img/chi13.png",
+                "name": "간장마늘떡강정",
+                "onlyprice": 10900,
+                "desc":"알싸한 마늘 향의 매콤함, 특제 간장소스의 단짠이 조화로운 순살떡강정"
+            }]
+        },
+        {
+            "set": [{
+                "img":  "./public/img/sid1.png",
+                "name": "공룡치킨",
+                "onlyprice": 3000,
+                "desc":"치즈와 카레 두 가지맛으로 즐기는 귀여운 공룡 모양 치킨"
+            },{
+                "img":  "./public/img/sid2.png",
+                "name": "코울슬로",
+                "onlyprice": 1800,
+                "desc":"입맛을 돋우는 양배추의 아삭한 식감과 상큼한 맛의 코운슬로"
+            },{
+                "img":  "./public/img/sid3.png",
+                "name": "콘샐러드",
+                "onlyprice": 1500,
+                "desc":"달콤한 스위트콘에 신선한 야채까지"
+            },{
+                "img":  "./public/img/sid4.png",
+                "name": "바삭크림치즈볼",
+                "onlyprice": 3500,
+                "desc":"바삭하고 쫀득하게 즐기는 치즈볼(2조각/4조각)"
+            },{
+                "img":  "./public/img/sid5.png",
+                "name": "케이준양념감자",
+                "onlyprice": 3000,
+                "desc":"케이준 스타일의 바삭한 양념감자, 맘스터치의 베스트 사이드 메뉴"
+            },{
+                "img":  "./public/img/sid6.png",
+                "name": "치즈감자",
+                "onlyprice": 2500,
+                "desc":"케이준 양념감자와 깊고 진한 딥치즈 소스"
+            },{
+                "img":  "./public/img/sid7.png",
+                "name": "어니언치즈감자",
+                "onlyprice": 2500,
+                "desc":"치즈감자에 향긋한 어니언치즈 시즈닝"
+            },{
+                "img":  "./public/img/sid8.png",
+                "name": "치즈스틱(2조각)",
+                "onlyprice": 1900,
+                "desc":"고단백 영양 만점의 모짜렐라 치즈스틱"
+            },{
+                "img":  "./public/img/sid9.png",
+                "name": "팝콘볼",
+                "onlyprice": 2500,
+                "desc":"한입에 쏘옥~들어가는 팝콘 모양의 치킨볼!"
+            },{
+                "img":  "./public/img/sid10.png",
+                "name": "고구마치즈팝콘볼",
+                "onlyprice": 2500,
+                "desc":"한입에 쏙쏙~~ 고구마의 달콤함이 영양치즈와 환상적 만남!"
+            },{
+                "img":  "./public/img/sid11.png",
+                "name": "갈릭김떡만",
+                "onlyprice": 3000,
+                "desc":"바삭한 김말이, 쫄깃한 떡 강정과 팝콘만두를 갈릭소스에 버무려 맵지않게 즐기는 갈릭김떡만"
+            },{
+                "img":  "./public/img/sid12.png",
+                "name": "매콤김떡만",
+                "onlyprice": 3000,
+                "desc":"바삭한 김말이, 쫄깃한 떡 강정과 팝콘만두를 매콤한 소스에 맛있게 버무린 매콤김떡만"
+            }]
+        },
+        {
+            "dri": [{
+                "img": "./public/img/dir1.png",
+                "name": "사이다",
+                "onlyprice": 1600,
+                "desc":"톡 쏘는 사이다 한잔 맘스터치 메뉴와 함께 하세요"
+            },{
+                "img": "./public/img/dir2.png",
+                "name": "콜라",
+                "onlyprice": 1600,
+                "desc":"가슴까지 시원한 콜라 한잔! 맘스터치 메뉴와 함께하세요"
+            },{
+                "img": "./public/img/dir3.png",
+                "name": "미린다",
+                "onlyprice": 1600,
+                "desc":"새콤달콤한 미린다 맘스터치 메뉴와 함께하세요"
+            },{
+                "img": "./public/img/dir4.png",
+                "name": "마운틴듀",
+                "onlyprice": 1600,
+                "desc":"네온의 짜릿함 마운틴 듀 맘스터치 메뉴와 함께하세요"
+            },{
+                "img": "./public/img/dir5.png",
+                "name": "레몬에이드",
+                "onlyprice": 2200,
+                "desc":"레몬 한잔으로 비타민 가득 상큼한 하루!"
+            },{
+                "img": "./public/img/dir6.png",
+                "name": "청포도에이드",
+                "onlyprice": 2200,
+                "desc":"청포토 알맹이가 쏙쏙~ 상큼한 청포도 에이드"
+            },{
+                "img": "./public/img/dir7.png",
+                "name": "아메리카노(HOT)",
+                "onlyprice": 1500,
+                "desc":"맘스터치만의 스페셜 로스팅 원두를 사용해 부드러운 맛과 커피 본연의 풍미를 살린 아메리카노"
+            },{
+                "img": "./public/img/dir7.png",
+                "name": "아메리카노(ICE)",
+                "onlyprice": 1500,
+                "desc":"맘스터치만의 스페셜 로스팅 원두를 사용해 부드러운 맛과 커피 본연의 풍미를 살린 아메리카노"
+            }]
+        }
+    ]
+}]

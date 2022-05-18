@@ -1,0 +1,1794 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type="number"] {
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'CBNUJIKJI';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/CBNUJIKJI.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuncheonB';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 100%;
+  font-family: "SuncheonB";
+}
+
+#mainWrap h1 {
+  font-size: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100vw;
+  margin-top: 5.3vh;
+  height: 51.6vh;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+.scale {
+  -webkit-transform: scale(1.6) translateY(18%);
+          transform: scale(1.6) translateY(18%);
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+.originally {
+  -webkit-transform: scale(1) translateY(0%);
+          transform: scale(1) translateY(0%);
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+#App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#App #kiostImg {
+  z-index: -1000;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0 2%;
+}
+
+#App #kiostImg img {
+  height: 100vh;
+  width: auto;
+}
+
+#App #mainLoding {
+  z-index: -1100;
+  background: #fff;
+  padding: 10rem;
+  height: 50vh;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#App #mainLoding img {
+  width: 100%;
+  margin-top: 30%;
+}
+
+#App #AppContent {
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#App #AppContent #firstpage {
+  text-align: center;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+#App #AppContent #firstpage #mainKiostImg {
+  width: 100%;
+  height: 74%;
+  padding: 1% 0%;
+}
+
+#App #AppContent #firstpage #mainKiostImg img {
+  width: 100%;
+  height: 100%;
+}
+
+#App #AppContent #firstpage #mainKiostText {
+  line-height: 1.2;
+  padding-top: 0vh;
+  width: 100%;
+}
+
+#App #AppContent #firstpage #mainKiostText h2 {
+  font-size: 2vh;
+}
+
+#App #AppContent #firstpage #mainKiostText h2, #App #AppContent #firstpage #mainKiostText span {
+  color: red;
+  font-weight: 600;
+}
+
+#App #AppContent #firstpage #mainKiostText p {
+  font-size: .8vh;
+}
+
+#App #AppContent #firstpage #mainKiostText .oder_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4%;
+  margin: 1vh 0 1.2vh;
+}
+
+#App #AppContent #firstpage #mainKiostText .oder_btns button {
+  width: 80%;
+  background: orange;
+  font-size: 1.3vh;
+  font-weight: 900;
+  color: #fff;
+  border: 0;
+  border-radius: 2%;
+  -webkit-box-shadow: 2px 2px 5px 0px #888484;
+          box-shadow: 2px 2px 5px 0px #888484;
+  padding: 4% 0;
+}
+
+#App #AppContent #secondPage {
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+#App #AppContent #secondPage header {
+  max-height: 22%;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  width: 99%;
+  margin: auto;
+  height: 22%;
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#App #AppContent #secondPage header .headLine {
+  padding: 1rem 0;
+  width: 100%;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage header .headLine .headLogo {
+  width: 37%;
+  cursor: pointer;
+}
+
+#App #AppContent #secondPage header .headLine #headNav {
+  width: 55%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage header .headLine #headNav a {
+  width: 25%;
+  background-color: #f9a01a;
+  border-radius: 5%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  line-height: 3.6rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#App #AppContent #secondPage header .headLine #headNav :nth-child(1) {
+  margin-right: 2rem;
+}
+
+#App #AppContent #secondPage header .headLine #headNav :nth-child(2) {
+  margin-right: 2rem;
+}
+
+#App #AppContent #secondPage header .headMenuNavBox {
+  width: 100%;
+  height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#App #AppContent #secondPage header .headMenuNavBox .headMenuNav {
+  width: 85%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+#App #AppContent #secondPage header .headMenuNavBox .headMenuNav a {
+  width: 17%;
+  height: 100%;
+  background-color: #eeeeee;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  font-size: 1.3em;
+  font-weight: 700;
+  border: 0.35rem solid white;
+  border-bottom: none;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage header .backwhite {
+  background-color: #fff !important;
+}
+
+#App #AppContent #secondPage #mainSection {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  height: 48%;
+  font-size: 1rem;
+  position: relative;
+}
+
+#App #AppContent #secondPage #mainSection #MenuFoodWrap {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+}
+
+#App #AppContent #secondPage #mainSection #MenuFoodWrap .Menu_silder {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#App #AppContent #secondPage #mainSection #MenuFoodWrap .Menu_silder .mainMenuFood {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#App #AppContent #secondPage #mainSection #MenuFoodWrap .Menu_silder .mainMenuFood img {
+  vertical-align: middle;
+  width: 55%;
+  margin: auto;
+}
+
+#App #AppContent #secondPage #mainSection #MenuFoodWrap .Menu_silder .mainMenuFood .Food_body {
+  line-height: 1.7;
+}
+
+#App #AppContent #secondPage #mainSection #MenuFoodWrap .Menu_silder .mainMenuFood .Food_body .Food_price span::before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #f9a01a;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 2px;
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage #mainSection #MenuFoodWrap .Menu_silder .mainMenuFood .Food_body .Food_price span:nth-child(1)::before {
+  content: '₩';
+}
+
+#App #AppContent #secondPage #mainSection #MenuFoodWrap .Menu_silder .mainMenuFood .Food_body .Food_price span:nth-child(1)::after {
+  content: '원';
+}
+
+#App #AppContent #secondPage #mainSection #MenuControl {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+}
+
+#App #AppContent #secondPage #mainSection #MenuControl .mcbtn {
+  border: 0;
+  color: #0f0f0f;
+  width: 4em;
+  padding: 1%;
+  font-weight: 700;
+  position: absolute;
+  display: none;
+}
+
+#App #AppContent #secondPage #mainSection #MenuControl #menuBtnL {
+  border-radius: 12px 0px 0px 12px;
+  left: 10%;
+}
+
+#App #AppContent #secondPage #mainSection #MenuControl #menuBtnR {
+  border-radius: 0px 12px 12px 0px;
+  right: 10%;
+}
+
+#App #AppContent #secondPage #orderCalculate {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  height: 30%;
+  width: 100%;
+  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap {
+  width: 100%;
+  height: 100%;
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderTitle {
+  height: 15%;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderTitle ul {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-top: 1.2%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderTitle ul li:nth-child(1) {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderTitle ul li:nth-child(2) {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderTitle ul li:nth-child(3) {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderTitle ul li:nth-child(4) {
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderTitle ul li:nth-child(5) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents {
+  height: 85%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2em;
+  overflow: hidden;
+  gap: 2%;
+  padding: 1.5% 1%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1::-webkit-scrollbar {
+  width: 3px;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1::-webkit-scrollbar-thumb {
+  background-color: #f9a01a;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1::-webkit-scrollbar-track {
+  border-radius: 10%;
+  background-color: #5c4639;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow-x: auto;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffe0c4c4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem ul li {
+  padding: 2% 2%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem ul li i {
+  width: 33.333%;
+  display: inline;
+  padding: 0 5%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem ul li input {
+  width: 33.333%;
+  text-align: center;
+  border: #eeeeee;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem ul li:nth-child(1) {
+  -ms-flex-preferred-size: 43%;
+      flex-basis: 43%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem ul li:nth-child(2) {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  padding: 0;
+  text-overflow: clip;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem ul li:nth-child(3) {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  text-align: right;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem ul li:nth-child(4) {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont1 .oderItem p {
+  text-align: left;
+  font-size: .5em;
+  padding: 2% 0% 0% 3%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont2 {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  height: 100%;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont2 ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont2 ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont2 ul li input {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont2 ul li:nth-child(1) {
+  height: 15%;
+  width: 100%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont2 ul li:nth-child(2) {
+  height: 15%;
+  width: 100%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont2 ul li:nth-child(3) {
+  height: 15%;
+  width: 100%;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont2 ul li:nth-child(4) {
+  height: 25%;
+  width: 100%;
+  background: #5c4639;
+  color: #fff;
+}
+
+#App #AppContent #secondPage #orderCalculate #orderWrap #oderContents #odercont2 ul li:nth-child(5) {
+  height: 30%;
+  width: 100%;
+  background: #f9a01a;
+  color: #fff;
+}
+
+#App #AppContent #secondPage #SPselectionPopup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.158);
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap {
+  width: 80%;
+  height: 50%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #f9a01a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopTitle {
+  width: 100%;
+  height: 10%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f9a01a;
+  color: #fff;
+  position: relative;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopTitle .sp_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopTitle .sp_close button {
+  height: 100%;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents {
+  width: 100%;
+  height: 90%;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont1 {
+  height: 55%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont1 .spImgWrap {
+  width: 41%;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont1 .spImgWrap img {
+  width: 100%;
+  height: auto;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont1 .spTextWrap {
+  width: 45%;
+  font-size: .5em;
+  text-align: left;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont1 .spTextWrap .spTCount {
+  width: 100%;
+  text-align: center;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont1 .spTextWrap .spTCount input {
+  width: 50%;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont1 .spTextWrap .spTDes {
+  margin-top: 1em;
+  font-weight: 300;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont1 .spTextWrap .spTDes p:nth-child(1) {
+  margin-bottom: 5%;
+  font-weight: 700;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont1 .spTextWrap .spTDes p:nth-child(2) {
+  font-weight: 100;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont2 {
+  height: 40%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5%;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont2 button {
+  background: #f9a01a;
+  color: #fff;
+  border: 0;
+  border-radius: 2%;
+  cursor: pointer;
+  width: 80%;
+  height: 60%;
+  font-weight: 700;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont2 #sp_cont2Open {
+  display: block;
+}
+
+#App #AppContent #secondPage #SPselectionPopup #selecPopWrap #selectPopContents .sp_cont2 #sp_cont2OpenSide {
+  display: none;
+}
+
+#App #AppContent #secondPage #SPChoosePopup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.158);
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap {
+  width: 85%;
+  height: 95%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #f9a01a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #ChoosePopTitle {
+  width: 100%;
+  height: 5%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f9a01a;
+  color: #fff;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spImgWrap {
+  width: 30%;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spImgWrap img {
+  width: 100%;
+  height: auto;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap {
+  width: 65%;
+  font-size: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTiname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTiname h3 {
+  font-size: 2em;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTiname p {
+  font-size: 2em;
+  margin: 0 -25%;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTiname p::after {
+  content: "원";
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTCount {
+  width: 100%;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTCount input {
+  width: 50%;
+  margin: 2% 0;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTCount span {
+  text-align: right;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTCount i {
+  border: 0.5px solid black;
+  padding: 1.5%;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTDes p:nth-child(1) {
+  margin-bottom: 2%;
+  font-weight: 700;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopdesc .spTextWrap .spTDes p:nth-child(2) {
+  text-align: left;
+  font-size: 0;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody::-webkit-scrollbar-thumb {
+  background-color: #f9a01a;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody::-webkit-scrollbar-track {
+  border-radius: 10%;
+  background-color: #5c4639;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody {
+  width: 100%;
+  height: 65%;
+  text-align: left;
+  overflow-y: auto;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody .choosePopbodyitem {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody .choosePopbodyitem .choosePopbodyitemtitle {
+  width: 100%;
+  background: #f7f1e8;
+  font-size: 0.7em;
+  padding: 2% 5%;
+  position: relative;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody .choosePopbodyitem .choosePopbodyitemtitle::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 3%;
+  background: #f9a01a;
+  height: 100%;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody .choosePopbodyitem .choosePopbodyitemRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody .choosePopbodyitem .choosePopbodyitemRow .choosePopbody_item {
+  text-align: center;
+  font-size: 0.3em;
+  width: 20%;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody .choosePopbodyitem .choosePopbodyitemRow .input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody .choosePopbodyitem .choosePopbodyitemRow input[type=radio] + label > img {
+  margin: 2% 1%;
+  width: 100%;
+  height: auto;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody .choosePopbodyitem .choosePopbodyitemRow input[type=radio]:checked + label > img {
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 3px 3px #f9a01a;
+          box-shadow: 0 0 3px 3px #f9a01a;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbody .choosePopbodyitem .choosePopbodyitemRow input[type=radio]:checked + label > img::before {
+  content: "";
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbtn {
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10%;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbtn button {
+  font-size: 1em;
+  width: 40%;
+  height: 80%;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbtn button:nth-child(1) {
+  background: #5c4639;
+  color: #fff;
+  border: 0;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+#App #AppContent #secondPage #SPChoosePopup #ChoosePopWrap #choosePopbtn button:nth-child(2) {
+  background: #f9a01a;
+  color: #fff;
+  border: 0;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.158);
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap {
+  width: 85%;
+  height: 95%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #f9a01a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitle {
+  width: 100%;
+  height: 5%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f9a01a;
+  color: #fff;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopSubTitle {
+  width: 100%;
+  height: 10%;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopSubTitle h3 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList {
+  width: 100%;
+  height: 50%;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_Subtitle {
+  width: 100%;
+  height: 10%;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_Subtitle ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #ffe0c4c4;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_Subtitle ul li:nth-child(1) {
+  width: 50%;
+  text-align: left;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_Subtitle ul li:nth-child(2) {
+  width: 10%;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_Subtitle ul li:nth-child(3) {
+  width: 20%;
+  text-align: right;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists::-webkit-scrollbar {
+  width: 3px;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists::-webkit-scrollbar-thumb {
+  background-color: #f9a01a;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists::-webkit-scrollbar-track {
+  border-radius: 10%;
+  background-color: #5c4639;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists {
+  width: 100%;
+  height: 90%;
+  background: #fff;
+  overflow-x: auto;
+  border-bottom: 1em solid #ffe0c4c4;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists #OKodercont1 .oderItem {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists #OKodercont1 .oderItem ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists #OKodercont1 .oderItem ul li {
+  padding: 2% 2%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists #OKodercont1 .oderItem ul li input {
+  width: 100%;
+  border: 0;
+  text-align: center;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists #OKodercont1 .oderItem ul li:nth-child(1) {
+  -ms-flex-preferred-size: 57%;
+      flex-basis: 57%;
+  text-align: left;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists #OKodercont1 .oderItem ul li:nth-child(2) {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  padding: 0;
+  text-overflow: clip;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists #OKodercont1 .oderItem ul li:nth-child(3) {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  text-align: right;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists #OKodercont1 .oderItem ul li:nth-child(4) {
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+  font-size: 0;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTitleMemuList .optml_item_lists #OKodercont1 .oderItem p {
+  text-align: left;
+  font-size: .5em;
+  padding: 2% 0% 0% 3%;
+  font-weight: 400;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPay {
+  font-size: 1.2rem;
+  width: 100%;
+  height: 5%;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPay .optml_sum_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPay .optml_sum_wrap ul {
+  width: 100%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPay .optml_sum_wrap ul li:nth-child(2) span::after {
+  content: '원';
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPay .optml_sum_wrap ul .oderItemdonDele {
+  font-size: 0;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPay .optml_sum_wrap ul li {
+  text-align: left;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPay .optml_sum_wrap ul li span {
+  padding-left: 1em;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTake {
+  width: 100%;
+  height: 10%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTake .Take_box {
+  width: 50%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTake .Take_box input[type="radio"] {
+  display: none;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTake .Take_box input[type="radio"] + span {
+  font-size: 1.3em;
+  display: inline-block;
+  border: .13em solid #dfdfdf;
+  color: #dfdfdf;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2%;
+  padding: 5% 30%;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopTake .Take_box input[type="radio"]:checked + span {
+  border: .13em solid #f9a01a;
+  color: #f9a01a;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPayment {
+  padding: 5%;
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPayment div:nth-child(1) {
+  width: 25%;
+  background: #5c4639;
+  color: #fff;
+  border: 0;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPayment div:nth-child(2) {
+  width: 50%;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPayment div:nth-child(3) {
+  width: 25%;
+  background: #f9a01a;
+  color: #fff;
+  border: 0;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPayment div {
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPayment div span {
+  color: #f9a01a;
+}
+
+#App #AppContent #secondPage #SPOkeyPopup #OkeyPopWrap #OkeyPopPayment div a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1em;
+}
+
+#App #AppContent #secondPage #spCardPopup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.158);
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap {
+  width: 85%;
+  height: 85%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #f9a01a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2em;
+  line-height: 1.3;
+  font-size: 1.4em;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents h2 {
+  width: 100%;
+  height: 10%;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents div {
+  width: 100%;
+  height: 50%;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents div img {
+  width: 80%;
+  height: auto;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents p {
+  width: 100%;
+  height: 10%;
+  margin-bottom: 5%;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents a {
+  background: #f9a01a;
+  color: #fff;
+  border: 0;
+  border-radius: 2%;
+  cursor: pointer;
+  padding: 5% 30%;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents article ul li:nth-child(1) {
+  font-size: 1em;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents article ul li:nth-child(2) {
+  font-size: 2em;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents article ul li:nth-child(3) {
+  font-size: 3em;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents article ul li:nth-child(4) {
+  font-size: 1em;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents article ul li:nth-child(5) img {
+  width: 30%;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents article ul li:nth-child(6) {
+  font-size: .8em;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents article ul li:nth-child(7) {
+  font-size: 1.5em;
+  margin-top: 10%;
+  display: none;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents article ul li:nth-child(7) span {
+  color: red;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents #spcpCardOk {
+  display: block;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents .card_loding_container {
+  display: none;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents .card_loding_container .Loading {
+  position: relative;
+  width: 80%;
+  height: 25%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid none;
+  margin: auto;
+}
+
+#App #AppContent #secondPage #spCardPopup #CardPopupWrap .cardContents .card_loding_container .Loading span {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #f9a01a;
+  border-radius: 2%;
+}
+
+#App #Receipt {
+  display: none;
+  position: absolute;
+  top: 74%;
+  left: 53.5%;
+  width: 22%;
+  border: 1px solid #888484;
+  background: #fffdfd;
+  text-align: center;
+}
+
+#App #Receipt .ReceiptTop {
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+}
+
+#App #Receipt .ReceiptTop li:nth-child(4) {
+  font-size: 2em;
+}
+
+#App #Receipt .ReceiptTop li:nth-child(6) {
+  font-size: .7em;
+}
+
+#App #Receipt #Receiptcont1 {
+  width: 100%;
+  font-size: 1rem;
+  height: inherit;
+  max-height: 6em;
+  overflow: hidden;
+}
+
+#App #Receipt #Receiptcont1 .oderItem {
+  width: 100%;
+}
+
+#App #Receipt #Receiptcont1 .oderItem ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#App #Receipt #Receiptcont1 .oderItem ul li input {
+  width: 100%;
+  border: 0;
+  text-align: center;
+}
+
+#App #Receipt #Receiptcont1 .oderItem ul li:nth-child(1) {
+  width: 50%;
+}
+
+#App #Receipt #Receiptcont1 .oderItem ul li:nth-child(2) {
+  width: 15%;
+}
+
+#App #Receipt #Receiptcont1 .oderItem ul li:nth-child(3) {
+  width: 35%;
+}
+
+#App #Receipt #Receiptcont1 .oderItem ul li:nth-child(4) {
+  font-size: 0;
+}
+
+#App #Receipt #Receiptcont1 .oderItem ul p {
+  font-size: 0.5em;
+}
+
+#App #Receipt .ReceiptBottom {
+  margin-bottom: 2%;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+@media all and (min-width: 2000px) {
+  html, body {
+    font-size: 11px;
+  }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1950px) {
+  html, body {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 1023px) and (max-width: 1200px) {
+  html, body {
+    font-size: 8.5px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  html, body {
+    font-size: 7px;
+  }
+}
+
+@media all and (min-width: 510px) and (max-width: 767px) {
+  html, body {
+    font-size: 5px;
+  }
+  #App {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  #AppContent {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .scale {
+    -webkit-transform: scale(1.16) translateY(11%);
+            transform: scale(1.16) translateY(11%);
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+}
+
+@media all and (max-width: 510px) {
+  html, body {
+    font-size: 5px;
+  }
+  #App {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  #AppContent {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .scale {
+    -webkit-transform: scale(1.16) translateY(11%);
+            transform: scale(1.16) translateY(11%);
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+  #App #AppContent #secondPage #mainSection #MenuFoodWrap .Menu_silder .mainMenuFood {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

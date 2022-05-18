@@ -1,0 +1,19 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'CBNUJIKJI';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/CBNUJIKJI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SuncheonB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$기본 : 'CBNUJIKJI';
+$맘스터치 : 'SuncheonB';
+
+@mixin 노란버튼 {background:  #f9a01a; color: #fff;border: 0;border-radius: 2%; cursor: pointer;}
+@mixin 갈색버튼 {background: #5c4639;color: #fff;border: 0;border-radius: 2%; cursor: pointer;}
